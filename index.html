@@ -16,22 +16,22 @@
     .use-public-sans { font-family: 'Public-Sans', sans-serif; }
   </style>
 </head>
-<body style="font-family: 'Public Sans', sans-serif;" class="w-full md:w-[90%] h-full mx-auto bg-[#FAFAFA]">
+<body style="font-family: 'Public Sans', sans-serif;" class="w-full h-full mx-auto bg-[#FAFAFA]">
   <nav class="w-full flex justify-between items-center py-6 absolute top-0 left-0 z-40 bg-white">
     <div class="flex justify-center items-center">
       <img src="./images/logo.svg" alt="Easybank Logo" class="h-8">
     </div>
     <div>
-      <ul class="hidden md:flex space-x-6 text-gray-700">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Careers</a></li>
+      <ul class="hidden md:flex space-x-6 text-[16px] text-[#9698A6]">
+        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C]"><a href="#">Home</a></li>
+        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C]"><a href="#">About</a></li>
+        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C]"><a href="#">Contact</a></li>
+        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C]"><a href="#">Blog</a></li>
+        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C]"><a href="#">Careers</a></li>
       </ul>
     </div>
     <div>
-      <button class="hidden md:flex justify-center items-center bg-linear-to-r from-[#31D35C] to-[#2BB7DA]  text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">
+      <button class="hidden md:flex justify-center items-center bg-linear-to-r from-[#31D35C] to-[#2BB7DA]  text-white px-6 py-2 rounded-full hover:opacity-50 transition duration-300">
         Request Invite
       </button>
     </div>
@@ -46,7 +46,7 @@
     <div class="absolute top-[400px] left-[5%] w-[90%] flex flex-col items-center md:items-start text-center md:text-left space-y-6 z-20">
       <h1 class="text-4xl font-[400] text-gray-900">Next generation digital banking</h1>
       <p class="text-gray-600">Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-      <button class="bg-gradient-to-r from-[#31D35C] to-[#2BB7DA] text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">
+      <button class="bg-gradient-to-r from-[#31D35C] to-[#2BB7DA] text-white px-6 py-2 rounded-full hover:opacity-50 transition duration-300">
         Request Invite
       </button>
     </div>
@@ -89,55 +89,58 @@
     </div>
   </section>
 <!-- Last Articles -->
- <section class="mt-12 w-full bg-[#FAFAFA] flex flex-col justify-center items-center px-8 py-12">
+ <section class="w-full lg:w-[90%] mx-auto bg-[#FAFAFA] flex flex-col justify-center items-center mt-12  px-8 py-12">
       <h1 class="text-2xl text-center">Latest Articles</h1>
-      <div class="flex flex-col md:flex-row justify-between items-center w-full mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
-        <img src="./images/image-currency.jpg" alt="Currency Image" class="w-full h-auto">
-        <div class="flex flex-col space-y-4 px-6">
-          <h4 class="text-sm text-[#9698A6]">By Claire Robinson</h4>
-          <h3>Receive money in any currency with no fees</h3>
-          <p class="text-sm text-[#9698A6]">Receive money in any currency with no fees
-  The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …</p>
-        </div>
-      </div>
+      <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="flex flex-col justify-between items-center w-full lg:w-[20%] mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
+            <img src="./images/image-currency.jpg" alt="Currency Image" class="w-full h-auto">
+            <div class="flex flex-col space-y-4 px-6">
+              <h4 class="text-sm text-[#9698A6]">By Claire Robinson</h4>
+              <h3>Receive money in any currency with no fees</h3>
+              <p class="text-sm text-[#9698A6]">Receive money in any currency with no fees
+      The world is getting smaller and we’re becoming more mobile. So why should you be 
+      forced to only receive money in a single …</p>
+            </div>
+          </div>
 
-      <div class="flex flex-col md:flex-row justify-between items-center w-full mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
-        <img src="./images/image-restaurant.jpg" alt="Restaurant Image" class="w-full h-auto">
-        <div class="flex flex-col space-y-4 px-6">
-          <h4 class="text-sm text-[#9698A6]">By Wilson Hutton</h4>
-          <h3>Treat yourself without worrying about money</h3>
-          <p class="text-sm text-[#9698A6]"> Our simple budgeting feature allows you to separate out your spending and set 
-  realistic limits each month. That means you …</p>
-        </div>
-      </div>
+          <div class="flex flex-col justify-between items-center w-full lg:w-[20%] mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
+            <img src="./images/image-restaurant.jpg" alt="Restaurant Image" class="w-full h-auto">
+            <div class="flex flex-col space-y-4 px-6">
+              <h4 class="text-sm text-[#9698A6]">By Wilson Hutton</h4>
+              <h3>Treat yourself without worrying about money</h3>
+              <p class="text-sm text-[#9698A6]"> Our simple budgeting feature allows you to separate out your spending and set 
+      realistic limits each month. That means you …</p>
+            </div>
+          </div>
 
-      <div class="flex flex-col md:flex-row justify-between items-center w-full mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
-        <img src="./images/image-plane.jpg" alt="Plane Image" class="w-full h-auto">
-        <div class="flex flex-col space-y-4 px-6">
-          <h4 class="text-sm text-[#9698A6]">By Wilson Hutton</h4>
-          <h3>Take your Easybank card wherever you go</h3>
-          <p class="text-sm text-[#9698A6]">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
-  while you’re abroad. We’ll even show you …</p>
-        </div>
-      </div>
+          <div class="flex flex-col justify-between items-center w-full lg:w-[20%] mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
+            <img src="./images/image-plane.jpg" alt="Plane Image" class="w-full h-auto">
+            <div class="flex flex-col space-y-4 px-6">
+              <h4 class="text-sm text-[#9698A6]">By Wilson Hutton</h4>
+              <h3>Take your Easybank card wherever you go</h3>
+              <p class="text-sm text-[#9698A6]">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+      while you’re abroad. We’ll even show you …</p>
+            </div>
+          </div>
 
-      <div class="flex flex-col md:flex-row justify-between items-center w-full mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
-        <img src="./images/image-confetti.jpg" alt="Plane Image" class="w-full h-auto">
-        <div class="flex flex-col space-y-4 px-6">
-          <h4 class="text-sm text-[#9698A6]">By Claire Robinson</h4>
-          <h3>Our invite-only Beta accounts are now live!</h3>
-          <p class="text-sm text-[#9698A6]">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-  It’s easy to request an invite through the site ...</p>
-        </div>
+          <div class="flex flex-col justify-between items-center w-full lg:w-[20%] mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
+            <img src="./images/image-confetti.jpg" alt="Plane Image" class="w-full h-auto">
+            <div class="flex flex-col space-y-4 px-6">
+              <h4 class="text-sm text-[#9698A6]">By Claire Robinson</h4>
+              <h3>Our invite-only Beta accounts are now live!</h3>
+              <p class="text-sm text-[#9698A6]">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+      It’s easy to request an invite through the site ...</p>
+            </div>
+          </div>
       </div>
+      
  </section>
 
  <!-- footer -->
-  <footer class="bg-[#2D314D] text-white flex flex-col md:flex-row justify-between items-center p-8 space-y-6 md:space-y-0">
-    <div>
+  <footer class="w-full bg-[#2D314D] text-white flex flex-col lg:flex-row justify-between items-center px-8 py-10 space-y-6 lg:space-y-0">
+    <div class="flex flex-col space-y-6">
       <img src="./images/logo-white.svg" alt="Easybank Logo" class="h-8 mx-auto">
-      <div>
+      <div id="social-icons">
         <img src="./images/icon-facebook.svg" alt="Facebook Icon" class="h-6 inline-block mx-2"/>
         <img src="./images/icon-youtube.svg" alt="YouTube Icon" class="h-6 inline-block mx-2"/>
         <img src="./images/icon-twitter.svg" alt="Twitter Icon" class="h-6 inline-block mx-2"/>
@@ -146,21 +149,31 @@
       </div>
     </div>
 
-    <div>
-      <ul class="flex flex-col items-center space-y-4 mt-6 text-gray-700">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Careers</a></li>
+    <div class=" lg:w-1/2 mx-auto flex flex-col lg:flex-row justify-around lg:px-8 lg:space-x-8">      
+        <div>
+          <ul class="flex flex-col items-center space-y-4 mt-6 text-white">
+            <li class="hover:text-[#31D35C]"><a href="#">About Us</a></li>
+            <li class="hover:text-[#31D35C]"><a href="#">Contact</a></li>
+            <li class="hover:text-[#31D35C]"><a href="#">Blog</a></li>
+          </ul>
+         
+        </div>
+        <div>
+            <ul class="flex flex-col items-center space-y-4 mt-6 text-white">
+              <li class="hover:text-[#31D35C]"><a href="#">Careers</a></li>
+              <li class="hover:text-[#31D35C]"><a href="#">Support</a></li>
+              <li class="hover:text-[#31D35C]"><a href="#">Privacy Policy</a></li>
+            </ul>          
+        </div>
+              
       </ul>
     </div>
 
-    <div>
+    <div class="flex flex-col justify-center items-center space-y-6">
        <button class="flex justify-center items-center bg-linear-to-r from-[#31D35C] to-[#2BB7DA]  text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">
         Request Invite
       </button>
-      <p>© Easybank. All Rights Reserved</p>
+      <p class="text-[#9698A6]">© Easybank. All Rights Reserved</p>
     </div>
   </footer>
 
@@ -170,5 +183,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
