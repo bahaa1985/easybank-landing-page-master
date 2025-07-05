@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -16,8 +16,8 @@
     .use-public-sans { font-family: 'Public-Sans', sans-serif; }
   </style>
 </head>
-<body style="font-family: 'Public Sans', sans-serif;" class="w-full h-full mx-auto bg-[#FAFAFA] overflow-x-hidden">
-  <nav class="w-full flex justify-between items-center py-6 absolute top-0 left-0 z-40 bg-white">
+<body style="font-family: 'Public Sans', sans-serif;" class="absolute top-0 left-0  w-full h-full h-full mx-auto bg-[#FAFAFA] overflow-x-hidden">
+  <nav class="w-full flex justify-between items-center py-6 absolute top-0 left-0 px-[5%] z-40 bg-white">
     <div class="flex justify-center items-center">
       <img src="./images/logo.svg" alt="Easybank Logo" class="h-8">
     </div>
@@ -42,10 +42,10 @@
     </div>
   </nav>
   <!-- section -->
-   <section class="w-full h-[500px] md:px-16 flex flex-col-reverse justify-between items-center 
+   <section class="w-full h-[550px] md:px-32 flex flex-col-reverse justify-between items-center 
    md:flex-row md:gap-8 py-12 mt-[400px] md:mt-8">
-    <div class=" w-[90%] md:w-1/4 flex flex-col items-center md:items-start text-center md:text-left space-y-6 z-20">
-      <h1 class="text-4xl font-[400] text-gray-900">Next generation digital banking</h1>
+    <div class="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6 z-20">
+      <h1 class="text-5xl font-[400] text-gray-900">Next generation digital banking</h1>
       <p class="text-gray-600">Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
       <button class="bg-gradient-to-r from-[#31D35C] to-[#2BB7DA] text-white px-6 py-2 rounded-full hover:opacity-50 transition duration-300">
         Request Invite
@@ -53,13 +53,15 @@
     </div>
    </section>
    <!-- images -->
-    <!-- <div class="md:left-1/2 w-full h-1/2 md:w-1/2  overflow-x-hidden">
-      <img src="./images/image-mockups.png" alt="Mockup Image" class="absolute -top-8 md:top-10 left:0  md:left-1/2 w-[90%] md:w-1/2 h-auto z-20">
-      <img src="./images/bg-intro-mobile.svg" alt="Background Image" class="absolute md:hidden  top-10 left-0 md:left-1/2 w-[90%] md:w-1/2 h-[400px] md:h-auto z-10 ">
-      <img src="./images/bg-intro-desktop.svg" alt="Background Image" class="hidden md:block md:absolute top-20 left-0 md:-top-16 md:left-1/2 w-[90%] md:w-[650px] md:h-[600px] z-10">
-    </div> -->
+    <!-- <div class="absolue md:left-1/2 w-full h-1/2 md:w-1/2"> -->
+      <img src="./images/image-mockups.png" alt="Mockup Image" 
+      class="absolute -top-8 md:top-0 left:0  md:-right-32  w-[90%] md:w-1/2 h-[700px] z-20">
+      <!-- <img src="./images/bg-intro-mobile.svg" alt="Background Image" class="absolute md:hidden  top-10 left-0 md:left-1/2 w-[90%] md:w-1/2 h-[400px] md:h-auto z-10 "> -->
+      <img src="./images/bg-intro-desktop.svg" alt="Background Image" 
+      class="hidden md:block md:absolute top-0 left-0 md:-top-16 md:left-1/2  w-[90%] md:w-2/3   h-[700px] z-10">
+    <!-- </div> -->
  <!-- section -->
-  <section class="w-full h-[500px] bg-[#F3F4F6] flex flex-col justify-center items-center px-16 py-12">
+  <section class="w-full h-[550px] bg-[#F3F4F6] flex flex-col justify-center items-center px-32 py-12">
     <div class="w-full flex flex-col space-y-6 my-6">
         <h1 class="w-full mx-auto text-3xl text-left">Why choose Easybank?</h1>
         <p class="w-full md:w-1/2 text-left text-lg text-[#9698A6]">
@@ -94,7 +96,7 @@
     
   </section>
 <!-- Last Articles -->
- <section class="w-full h-[600px] mx-auto bg-[#FAFAFA] flex flex-col justify-center items-center px-16 py-12">
+ <section class="w-full h-[550px] mx-auto bg-[#FAFAFA] flex flex-col justify-center items-center md:px-32 py-12">
       <p class="w-full text-3xl text-center md:text-left">Latest Articles</p>
       <div class="my-auto flex flex-col lg:flex-row lg:justify-between">
           <div class="flex flex-col justify-between items-center w-full lg:w-[25%] mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
@@ -102,7 +104,7 @@
             <div class="w-full h-[250px] flex flex-col space-y-4 p-6">
               <h4 class="text-sm text-[#9698A6]">By Claire Robinson</h4>
               <h3>Receive money in any currency with no fees</h3>
-              <p class="text-sm text-[#9698A6]">Receive money in any currency with no fees
+              <p class="text-[0.8rem] text-[#9698A6]">Receive money in any currency with no fees
       The world is getting smaller and we’re becoming more mobile. So why should you be 
       forced to only receive money in a single …</p>
             </div>
@@ -113,7 +115,7 @@
             <div class="w-full h-[250px] flex flex-col space-y-4 p-6">
               <h4 class="text-sm text-[#9698A6]">By Wilson Hutton</h4>
               <h3>Treat yourself without worrying about money</h3>
-              <p class="text-sm text-[#9698A6]"> Our simple budgeting feature allows you to separate out your spending and set 
+              <p class="text-[0.8rem] text-[#9698A6]"> Our simple budgeting feature allows you to separate out your spending and set 
       realistic limits each month. That means you …</p>
             </div>
           </div>
@@ -123,7 +125,7 @@
             <div class="w-full h-[250px] flex flex-col space-y-4 p-6">
               <h4 class="text-sm text-[#9698A6]">By Wilson Hutton</h4>
               <h3>Take your Easybank card wherever you go</h3>
-              <p class="text-sm text-[#9698A6]">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+              <p class="text-[0.8rem] text-[#9698A6]">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
       while you’re abroad. We’ll even show you …</p>
             </div>
           </div>
@@ -133,7 +135,7 @@
             <div class="w-full h-[250px] flex flex-col space-y-4 p-6">
               <h4 class="text-sm text-[#9698A6]">By Claire Robinson</h4>
               <h3>Our invite-only Beta accounts are now live!</h3>
-              <p class="text-sm text-[#9698A6]">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+              <p class="text-[0.8rem] text-[#9698A6]">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
       It’s easy to request an invite through the site ...</p>
             </div>
           </div>
@@ -184,7 +186,7 @@
 
   
   
-  <div class="attribution">
+  <div class="w-full bg-[#2D314D] text-white">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
