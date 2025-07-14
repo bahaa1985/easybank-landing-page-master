@@ -41,3 +41,13 @@ socialIcons.forEach(social => {
         }                    
     })
 });
+
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    //toggle overlay visibility
+    const overlay = document.getElementById('overlay');
+    overlay.classList.toggle('hidden');
+});

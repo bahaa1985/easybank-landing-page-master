@@ -22,46 +22,60 @@
       <img src="./images/logo.svg" alt="Easybank Logo" class="h-8">
     </div>
     <div>
-      <ul class="hidden md:flex space-x-6 text-[16px] text-[#9698A6]">
-        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C]"><a href="#">Home</a></li>
-        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C]"><a href="#">About</a></li>
-        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C]"><a href="#">Contact</a></li>
-        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C]"><a href="#">Blog</a></li>
-        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C]"><a href="#">Careers</a></li>
+      <ul class="hidden md:flex space-x-6 text-[14px] text-[#9698A6]">
+        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C] hover:text-[#2D314D]"><a href="#">Home</a></li>
+        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C] hover:text-[#2D314D]"><a href="#">About</a></li>
+        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C] hover:text-[#2D314D]"><a href="#">Contact</a></li>
+        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C] hover:text-[#2D314D]"><a href="#">Blog</a></li>
+        <li class="w-16 text-center border-b-4 border-transparent hover:border-[#31D35C] hover:text-[#2D314D]"><a href="#">Careers</a></li>
       </ul>
     </div>
     <div>
-      <button class="hidden md:flex justify-center items-center bg-linear-to-r from-[#31D35C] to-[#2BB7DA]  text-white px-6 py-2 rounded-full hover:opacity-50 transition duration-300">
+      <button class="hidden md:flex justify-center items-center bg-linear-to-r from-[#31D35C] to-[#2BB7DA]  text-white px-6 py-2 rounded-full cursor-pointer hover:opacity-50 transition duration-300">
         Request Invite
       </button>
     </div>
-    <div  class="flex md:hidden">
+    <div id="mobile-menu-button" class="flex md:hidden">
       <button class="flex justify-center items-center text-gray-700 focus:outline-none">
         <img src="./images/icon-hamburger.svg" alt="Menu Icon" class="h-6">
       </button>
     </div>
   </nav>
+  <!-- mobile menu -->
+   <div class="absolute top-28 left-[5%] w-[90%] tra h-72 bg-white z-30 rounded-lg hidden md:hidden" id="mobile-menu">
+    <ul class="flex flex-col items-center justify-center h-full space-y-6 text-lg text-[#9698A6]">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Blog</li>
+      <li>Careers</li>
+    </ul>
+  </div>
+
+    <!-- overlay -->
+ <div class="fixed inset-0 bg-linear-to-b from-[#2D314D] to-white opacity-50 z-20 hidden md:hidden" id="overlay"></div>
+
+  <!-- images -->
+  <img src="./images/image-mockups.png" alt="Mockup Image" 
+  class="absolute w-[90%] md:h-[550px] lg:h-[700px] md:w-1/2 lg:w-1/2  xl:w-2/5 -top-8 md:top-0 
+  left-[5%] md:left-[60%] lg:left-3/5 xl:left-4/6 z-20">
+  <img src="./images/bg-intro-mobile.svg" alt="Background Image" 
+  class="absolute md:hidden  top-10 left-0 md:left-1/2 w-full md:w-1/2 h-[400px] md:h-auto z-10 ">
+  <img src="./images/bg-intro-desktop.svg" alt="Background Image" 
+  class="hidden md:block md:absolute top-0 left-0 md:-top-20 md:left-1/2  w-[90%] md:w-2/3  md:h-[550px]  lg:h-[700px] z-10">
+
   <!-- section -->
    <section class="w-full h-[350px] md:h-fit lg:h-[550px] flex flex-col-reverse justify-between items-center 
    md:flex-row md:gap-8 px-4 md:px-16 xl:px-32 py-16 md:py-12 mt-[400px] md:mt-16">
     <div class="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6 z-20">
-      <h1 class="md:text-4xl lg:text-5xl font-[400] text-gray-900">Next generation digital banking</h1>
+      <h1 class="text-4xl lg:text-5xl font-[400] text-gray-900">Next generation digital banking</h1>
       <p class="text-gray-600">Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-      <button class="bg-gradient-to-r from-[#31D35C] to-[#2BB7DA] text-white px-6 py-2 rounded-full hover:opacity-50 transition duration-300">
+      <button class="bg-gradient-to-r from-[#31D35C] to-[#2BB7DA] text-white px-6 py-2 rounded-full cursor-pointer hover:opacity-50 transition duration-300">
         Request Invite
       </button>
     </div>
    </section>
-   <!-- images -->
-    <!-- <div class="absolue md:left-1/2 w-full h-1/2 md:w-1/2"> -->
-      <img src="./images/image-mockups.png" alt="Mockup Image" 
-      class="absolute w-[90%] md:h-[550px] lg:h-[700px] md:w-1/2 lg:w-1/2  xl:w-2/5 -top-10 md:-top-8 md:top-0 
-      left-[5%] md:left-[60%] lg:left-3/5 xl:left-4/6 z-20">
-      <img src="./images/bg-intro-mobile.svg" alt="Background Image" 
-      class="absolute md:hidden  top-10 left-0 md:left-1/2 w-full md:w-1/2 h-[400px] md:h-auto z-10 ">
-      <img src="./images/bg-intro-desktop.svg" alt="Background Image" 
-      class="hidden md:block md:absolute top-0 left-0 md:-top-20 md:left-1/2  w-[90%] md:w-2/3  md:h-[550px]  lg:h-[700px] z-10">
-    <!-- </div> -->
+   
  <!-- section -->
   <section class="w-full md:h-fit lg:h-[550px] bg-[#F3F4F6] flex flex-col justify-center items-center px-4 md:px-16 xl:px-32 py-12">
     <div class="w-full flex flex-col text-center md:text-left space-y-6 my-6">
@@ -97,15 +111,15 @@
     </div>
     
   </section>
-<!-- Last Articles -->
- <section class="w-full md:h-fit lg:h-[550px]  mx-auto bg-[#FAFAFA] flex flex-col justify-center items-center md:px-16 xl:px-32 py-12 lg:py-32">
+  <!-- Last Articles -->
+  <section class="w-full md:h-fit lg:h-[550px]  mx-auto bg-[#FAFAFA] flex flex-col justify-center items-center md:px-16 xl:px-32 py-12 lg:py-32">
       <p class="w-full text-3xl text-center md:text-left">Latest Articles</p>
-      <div class="my-auto flex flex-col md:flex-row md:flex-wrap lg:justify-between">
+      <div class="my-auto mx-auto flex flex-col md:flex-row md:flex-wrap lg:justify-between">
           <div class="flex flex-col justify-between items-center w-full md:w-1/2 lg:w-[25%] md:mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
-            <img src="./images/image-currency.jpg" alt="Currency Image" class="w-[90%] h-[150px] rounded-t-lg">
+            <img src="./images/image-currency.jpg" alt="Currency Image" class="w-[90%] h-[180px] mx-auto rounded-t-lg">
             <div class="w-full h-[250px] md:h-[200px] flex flex-col space-y-4 p-6">
               <h4 class="text-sm text-[#9698A6]">By Claire Robinson</h4>
-              <h3>Receive money in any currency with no fees</h3>
+              <h3 class="hover:text-[#31D35C] cursor-pointer">Receive money in any currency with no fees</h3>
               <p class="text-[0.8rem] text-[#9698A6]">Receive money in any currency with no fees
       The world is getting smaller and we’re becoming more mobile. So why should you be 
       forced to only receive money in a single …</p>
@@ -113,30 +127,30 @@
           </div>
 
           <div class="flex flex-col justify-between items-center w-full md:w-1/2 lg:w-[25%] md:mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
-            <img src="./images/image-restaurant.jpg" alt="Restaurant Image" class="w-[90%] h-[150px] rounded-t-lg">
+            <img src="./images/image-restaurant.jpg" alt="Restaurant Image" class="w-[90%] h-[180px] mx-auto rounded-t-lg">
             <div class="w-full h-[250px] md:h-[200px] flex flex-col space-y-4 p-6">
               <h4 class="text-sm text-[#9698A6]">By Wilson Hutton</h4>
-              <h3>Treat yourself without worrying about money</h3>
+              <h3 class="hover:text-[#31D35C] cursor-pointer">Treat yourself without worrying about money</h3>
               <p class="text-[0.8rem] text-[#9698A6]"> Our simple budgeting feature allows you to separate out your spending and set 
       realistic limits each month. That means you …</p>
             </div>
           </div>
 
           <div class="flex flex-col justify-between items-center w-full md:w-1/2 lg:w-[25%] md:mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
-            <img src="./images/image-plane.jpg" alt="Plane Image" class="w-[90%] h-[150px] rounded-t-lg">
+            <img src="./images/image-plane.jpg" alt="Plane Image" class="w-[90%] h-[180px] mx-auto rounded-t-lg">
             <div class="w-full h-[250px] md:h-[200px] flex flex-col space-y-4 p-6">
               <h4 class="text-sm text-[#9698A6]">By Wilson Hutton</h4>
-              <h3>Take your Easybank card wherever you go</h3>
+              <h3 class="hover:text-[#31D35C] cursor-pointer">Take your Easybank card wherever you go</h3>
               <p class="text-[0.8rem] text-[#9698A6]">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
       while you’re abroad. We’ll even show you …</p>
             </div>
           </div>
 
           <div class="flex flex-col justify-between items-center w-full md:w-1/2 lg:w-[25%] md:mt-8 bg-[#FFFFFF] space-y-6 md:space-y-0 md:space-x-6">
-            <img src="./images/image-confetti.jpg" alt="Plane Image" class="w-[90%] h-[150px] rounded-t-lg">
+            <img src="./images/image-confetti.jpg" alt="Plane Image" class="w-[90%] h-[180px] mx-auto rounded-t-lg">
             <div class="w-full h-[250px] md:h-[200px] flex flex-col space-y-4 p-6">
               <h4 class="text-sm text-[#9698A6]">By Claire Robinson</h4>
-              <h3>Our invite-only Beta accounts are now live!</h3>
+              <h3 class="hover:text-[#31D35C] cursor-pointer">Our invite-only Beta accounts are now live!</h3>
               <p class="text-[0.8rem] text-[#9698A6]">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
       It’s easy to request an invite through the site ...</p>
             </div>
@@ -147,14 +161,14 @@
 
  <!-- footer -->
   <footer class="w-full bg-[#2D314D] text-white flex flex-col lg:flex-row justify-between items-center px-8 py-10 space-y-6 lg:space-y-0">
-    <div class="flex flex-col space-y-6">
+    <div class="flex flex-col space-y-12">
       <img src="./images/logo-white.svg" alt="Easybank Logo" class="h-8 mx-auto">
       <div id="social-icons">
-        <img src="./images/icon-facebook.svg" alt="Facebook Icon" class="h-6 inline-block mx-2"/>
-        <img src="./images/icon-youtube.svg" alt="YouTube Icon" class="h-6 inline-block mx-2"/>
-        <img src="./images/icon-twitter.svg" alt="Twitter Icon" class="h-6 inline-block mx-2"/>
-        <img src="./images/icon-pinterest.svg" alt="Pinterest Icon" class="h-6 inline-block mx-2"/>
-        <img src="./images/icon-instagram.svg" alt="Instagram Icon" class="h-6 inline-block mx-2"/>
+        <img src="./images/icon-facebook.svg" alt="Facebook Icon" class="h-6 inline-block mx-2 cursor-pointer"/>
+        <img src="./images/icon-youtube.svg" alt="YouTube Icon" class="h-6 inline-block mx-2 cursor-pointer"/>
+        <img src="./images/icon-twitter.svg" alt="Twitter Icon" class="h-6 inline-block mx-2 cursor-pointer"/>
+        <img src="./images/icon-pinterest.svg" alt="Pinterest Icon" class="h-6 inline-block mx-2 cursor-pointer"/>
+        <img src="./images/icon-instagram.svg" alt="Instagram Icon" class="h-6 inline-block mx-2 cursor-pointer"/>
       </div>
     </div>
 
@@ -179,18 +193,18 @@
     </div>
 
     <div class="flex flex-col justify-center items-center space-y-6">
-       <button class="flex justify-center items-center bg-linear-to-r from-[#31D35C] to-[#2BB7DA]  text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">
-        Request Invite
-      </button>
+      <button class="flex justify-center items-center bg-linear-to-r from-[#31D35C] to-[#2BB7DA] text-white px-6 py-2 rounded-full cursor-pointer transition duration-300 hover:brightness-150">
+       Request Invite
+          </button>
       <p class="text-[#9698A6]">© Easybank. All Rights Reserved</p>
     </div>
   </footer>
 
   
   
-  <div class="w-full bg-[#2D314D] text-white">
+  <div class="w-full bg-[#2D314D] px-4 md:py-4 text-sm text-white md:text-center">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/bahaa1985">Bahaa Salaheldin</a>.
   </div>
 
   <script src="index.js"></script>
